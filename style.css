@@ -1,0 +1,204 @@
+:root {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body * + * {
+    margin-top: 1em;
+}
+
+body {
+    background: rgb(23, 40, 56);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.title {
+    background: rgb(177, 192, 221);
+    width: 100%;
+    padding: 1em .5em;
+    text-align: center;
+    border-radius: .3em;
+}
+
+.title h2 {
+    font-size: 1.8rem;
+    color: #362556;
+}
+
+.wrap {
+    display: flex;
+}
+
+.wrap * + * {
+    margin-left: 1em;
+}
+
+.btn-chart-pie {
+    flex: 2;
+    margin-left: -1em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tab {
+    flex: 1;
+    background: rgb(177, 192, 221);
+    margin-top: 0;
+}
+
+.btn {
+    display: flex;
+    outline: none;    
+}
+
+button {
+    border: none
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    outline: none;
+    border: none;
+    opacity: .9;
+}
+
+button:focus {
+    outline:0;
+} 
+
+.btn > button {
+    background: rgb(90, 75, 170);
+    text-decoration: none;
+    padding: 1em 3em;
+    color: white;
+    margin-top: 0;
+    border-radius: .3em;
+}
+
+.btn .next {
+    margin-left: auto;
+}
+
+.btn .back {
+    margin-left: 1.2em;
+}
+
+
+
+.chart {
+    background: rgb(177, 192, 221);
+    display: flex;
+    padding: 1.2em 2em;
+    flex-direction: column;
+}
+
+.chart h2 {
+    margin-top: 0;
+    color: #333333;
+}
+
+.chart .bar-chart {
+    /* margin-left: -2em; */
+}
+
+.pie {
+    background: rgb(177, 192, 221);
+    display: flex;
+    padding: 1.2em 2em;
+    flex-direction: column;
+}
+
+.pie h2 {
+    margin-top: 0;
+    color: #333333;
+}
+
+.pie-chart {
+    /* margin-left: -4em; */
+}
+
+.pie-chart {
+    /* text-align: center; */
+}
+
+.tab {
+    padding: 0em 2em;
+}
+
+.tab h2 {
+    color: #333333;
+}
+
+table { 
+    width: 80%; 
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+    background: rgb(90, 75, 170); 
+}
+th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+    cursor: s-resize;
+    background-repeat: no-repeat;
+    background-position: 3% center;
+}
+td, th { 
+    /* padding: 6px;  */
+    padding: 8px 22px;
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
+
+tr td {
+    text-align: center;
+}
+
+.axis {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+  }
+
+polyline {
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+.labelName tspan {
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+.labelName {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+
+/* .year {
+    margin-left: 3em;
+    font-size: 1.5em;
+} */

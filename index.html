@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document2</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+</head>
+<body>
+    <div class="container">
+        <section class="title">
+            <h2>MONTHLY BALANCE BY WHALES</h2>
+        </section>
+
+        <div class="wrap">
+            <div class="btn-chart-pie">
+                <section class="btn">
+                    <button class="back" id="back">Back</button>
+                    <button class="next" id="next">Next</button>
+                </section>
+                <section class="chart"> 
+                    <h2>Monthly - bar chart</h2>
+                    <div class="bar-chart"></div>
+                </section>
+                <section class="pie">
+                    <h2>Monthly - pie chart</h2>
+                    <div class="pie-chart"></div>
+                </section>
+            </div>
+
+            <section class="tab">
+                <h2>Top 10</h2>
+            </section>    
+        </div>
+    </div>
+    
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="./bar-pie-table.js"></script>
+    
+</body>
+</html>
